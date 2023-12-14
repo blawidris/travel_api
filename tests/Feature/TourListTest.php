@@ -49,6 +49,6 @@ class TourListTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertJsonCount(15, 'data');
-        $response->assertJsonPath('meta.current_page', 1);
+        $response->assertJsonPath('meta.last_page', 2);
     }
 }
